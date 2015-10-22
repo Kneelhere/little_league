@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/' => 'index'
+  get '/' => 'welcome#index'
 
   get '/leagues' => 'leagues#index'
 
