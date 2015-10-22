@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  get '/' => 'index'
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get '/' => 'welcome#index'
 
   get '/leagues' => 'leagues#index'
 
